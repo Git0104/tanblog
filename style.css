@@ -37,6 +37,17 @@ header {
   transform: translateX(-100px)
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 画面全体の高さ */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* ヘッダーとフッターの間を自動で広げる */
+}
+
 /* 文字だけボタン */
 .text-button {
   position: relative;          /* 擬似要素用 */
