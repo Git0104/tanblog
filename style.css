@@ -122,7 +122,7 @@ footer {
   background-color: #87CEEB; /* 濃いめの水色 */
   color: white;              /* 文字色 */
   padding: 41px;             /* 内側の余白 */
-  text-align: center;        /* 文字を中央に */
+  text-align: left;        /* 文字を中央に */
   font-size: 14px;           /* 文字サイズ */
 }
 
