@@ -12,6 +12,14 @@ header {
   justify-content: space-between;
   z-index: 1000;          /* ヒーローより前面 */
 }
+
+.welcome {
+  text-align: center;       /* 真ん中に配置 */
+  margin-top: 20px;         /* ヘッダーとの間にスペース */
+  font-size: 20px;          /* 文字サイズ */
+  color: black;              /* 文字色 */
+}
+
 /* 会社名 */
 .site-title {
   display: block;      /* ブロック要素にする */
