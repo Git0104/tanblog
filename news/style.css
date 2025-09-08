@@ -15,11 +15,11 @@ header {
 
 .welcome {
   text-align: center;       /* 真ん中に配置 */
-  margin-top: 20px;         /* ヘッダーとの間にスペース */
+  margin-left: -500px;
+  margin-top: 100px;/* ヘッダーとの間にスペース */
   font-size: 20px;          /* 文字サイズ */
-  color: black;              /* 文字色 */
+  color: black;    /* 文字色 */
 }
-
 /* 会社名 */
 .site-title {
   display: block;      /* ブロック要素にする */
@@ -144,6 +144,7 @@ footer {
   padding: 41px;             /* 内側の余白 */
   text-align: left;        /* 文字を中央に */
   font-size: 14px;           /* 文字サイズ */
+  margin-top: 500px;
 }
 
 .text-button::after {
@@ -208,3 +209,12 @@ footer {
     background-color: white;
   }
 }
+
+.welcome {
+  text-align: center;       /* 真ん中に配置 */
+  margin-left: -120px;
+  margin-top: 10px;/* ヘッダーとの間にスペース */
+  font-size: 20px;          /* 文字サイズ */
+  color: black;    /* 文字色 */
+}
+
