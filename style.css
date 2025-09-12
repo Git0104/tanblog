@@ -81,7 +81,7 @@ main {
 .text-button {
   position: relative;
   background-color: transparent;
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
   cursor: pointer;
