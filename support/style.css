@@ -140,6 +140,15 @@ footer {
   right: 15px;
 }
 
+.welcome {
+  text-align: center;       /* 真ん中に配置 */
+  margin-left: -120px;
+  margin-top: 10px;/* ヘッダーとの間にスペース */
+  font-size: 20px;          /* 文字サイズ */
+  color: black;    /* 文字色 */
+}
+
+
 /* スマホ用（画面幅600px以下） */
 @media (max-width: 800px) {
     header {
@@ -181,11 +190,4 @@ footer {
   }
 }
 
-.welcome {
-  text-align: center;       /* 真ん中に配置 */
-  margin-left: -120px;
-  margin-top: 10px;/* ヘッダーとの間にスペース */
-  font-size: 20px;          /* 文字サイズ */
-  color: black;    /* 文字色 */
-}
 
