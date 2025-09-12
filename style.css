@@ -77,17 +77,6 @@ main {
   gap: 15px;
 }
 
-/* 文字ボタンは共通 */
-.text-button {
-  position: relative;
-  background-color: transparent;
-  color: black;
-  text-decoration: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
 .text-button::after {
   content: "";
   position: absolute;
@@ -113,7 +102,7 @@ main {
 .text-button {
   position: relative;
   background-color: transparent;
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
   cursor: pointer;
