@@ -143,11 +143,25 @@ footer {
 .welcome {
   text-align: center;       /* 真ん中に配置 */
   margin-left: -120px;
-  margin-top: 10px;/* ヘッダーとの間にスペース */
-  font-size: 20px;          /* 文字サイズ */
+  margin-top: 100px;/* ヘッダーとの間にスペース */
+  font-size: 100px;  /* 文字サイズ */
+  font-weight: bold;
   color: black;    /* 文字色 */
 }
 
+.supportBtn{
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 424px;
+  font-size: 100px;
+  font-weight: bold;
+  border: 2px solid black; /* 枠線の太さと色 */
+  padding: 5px 10px;        /* 枠と文字の間の余白 */
+  display: inline-block;
+  color: #write;          /* 文字の色 */
+  background-color: white;
+}
+  
 
 /* スマホ用（画面幅600px以下） */
 @media (max-width: 800px) {
