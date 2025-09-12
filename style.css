@@ -13,13 +13,6 @@ header {
   z-index: 1000;          /* ヒーローより前面 */
 }
 
-.welcome {
-  text-align: center;       /* 真ん中に配置 */
-  margin-left: -500px;
-  margin-top: 100px;/* ヘッダーとの間にスペース */
-  font-size: 20px;          /* 文字サイズ */
-  color: black;    /* 文字色 */
-}
 /* 会社名 */
 .site-title {
   display: block;      /* ブロック要素にする */
@@ -47,17 +40,6 @@ body {
 main {
   flex: 1; /* ヘッダーとフッターの間を自動で広げる */
   color: black;
-}
-
-/* 文字だけボタン */
-.text-button {
-  position: relative;          /* 擬似要素用 */
-  background-color: transparent;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: color 0.3s;
 }
 
 /* 下線 */
