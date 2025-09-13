@@ -1,44 +1,31 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>たんのブログ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
-<main>
-  <div class="welcome">
- 　<a>サポート</a>
-</div>
+  <header>
+    <h1 class="site-title">たんのブログ</h1>
+    <!-- ハンバーガーアイコン -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-buttons">
+      <a href="/" class="text-button">ホーム</a>
+      <a href="/news" class="text-button">最新情報</a>
+      <a href="/posts" class="text-button">投稿一覧</a>
+      <a href="/otoku" class="text-button">お得情報!</a>
+      <a href="/support" class="text-button">サポート</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="welcome">
+      <a>サポート</a>
+    </div>
     <div class="supportBtn">
-    <a href="https://discord.gg/x3McQwGaGs" target="_blank">Discord</a>
+      <a href="https://discord.gg/x3McQwGaGs" target="_blank">Discord</a>
     </div>
   </main>
-<header>
-  <h1 class="site-title">たんのブログ</h1>
-  
-  <!-- ハンバーガーアイコン -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  
-  <nav class="nav-buttons">
-    <a href="/" class="text-button">ホーム</a>
-    <a href="/news" class="text-button">最新情報</a>
-    <a href="/posts" class="text-button">投稿一覧</a>
-    <a href="/otoku" class="text-button">お得情報!</a>
-    <a href="/support" class="text-button">サポート</a>
-  </nav>
-</header>
-  <main>
-</div>
-  </main>
+
   <footer>
     <p>&copy; たんのブログ</p>
   </footer>
-  <script src="hamburger.js"></script>
 </body>
-</html>
