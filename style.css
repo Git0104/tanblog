@@ -154,12 +154,14 @@ footer {
     display: none;           /* 最初は隠す */
     flex-direction: column;
     gap: 10px;
-    background-color: #333;
+    background-color: #white;
     position: absolute;
-    top: 60px;
-    right: 10px;
+    top: 35px;
+    right: -80px;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 3px;
+    -webkit-text-stroke: 1px black;
+    border: 2px solid black;
   }
 
   /* 開いたとき */
