@@ -140,52 +140,51 @@ footer {
   right: 15px;
 }
 
-/* スマホ用（画面幅600px以下） */
+/* スマホ用（画面幅800px以下） */
 @media (max-width: 800px) {
-    header {
+  header {
     display: flex;
     align-items: center;
     padding: 0px 20px;
-    justify-content: flex-start; /* 左ハンバーガー・右タイトル */
+    justify-content: flex-start;
     position: relative;
   }
 
   .nav-buttons {
     display: none;           /* 最初は隠す */
-    flex-direction: column;  /* 縦並び */
+    flex-direction: column;
     gap: 10px;
     background-color: #333;
     position: absolute;
-    top: 35px;
-    right: 0px;
+    top: 60px;
+    right: 10px;
     padding: 10px;
     border-radius: 6px;
+  }
+
+  /* 開いたとき */
+  .nav-buttons.active {
+    display: flex;
   }
 
   .hamburger {
     display: flex;
     order: 1;
-    position: absolute;  /* 絶対配置にする */ 
+    position: absolute;
     top: 50%;
+    right: 50px;
     flex-direction: column;
     gap: 5px;
     transform: translateY(-50%);
+    cursor: pointer;
     z-index: 1010;
+    margin-left: 
   }
 
   .hamburger span {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black; /* ←白だと背景に消えるので黒に変更 */
   }
 }
-
-.welcome {
-  text-align: center;       /* 真ん中に配置 */
-  margin-left: -120px;
-  margin-top: 10px;/* ヘッダーとの間にスペース */
-  font-size: 20px;          /* 文字サイズ */
-  color: black;    /* 文字色 */
-}
-
