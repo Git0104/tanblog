@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天気サイト</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    input, button { padding: 10px; font-size: 16px; }
+    #weather { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+
+  <h1>天気サイト</h1>
+  <input type="text" id="cityInput" placeholder="都市名を入力">
+  <button id="getWeatherBtn">天気を取得</button>
+
+  <div id="weather"></div>
+
+  <script>
+    const apiKey = "ここにAPIキーを入れる";
+
+    document.getElementById("getWeatherBtn").addEventListener("click", async () => {
+      const city = document.getElementById("cityInput").value;
+      if(!city) return alert("都市名を入力してください");
+
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ja`;
+
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if(data.cod !== 200) {
+          document.getElementById("weather").textContent = "天気情報が見つかりません";
+        } else {
+          document.getElementById("weather").innerHTML = `
+            <p>${data.name}の天気: ${data.weather[0].description}</p>
+            <p>気温: ${data.main.temp}°C</p>
+            <p>湿度: ${data.main.humidity}%</p>
+          `;
+        }
+      } catch(err) {
+        console.error(err);
+        document.getElementById("weather").textContent = "エラーが発生しました";
+      }
+    });
+  </script>
+
+</body>
+</html>
