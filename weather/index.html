@@ -25,7 +25,9 @@
       const city = document.getElementById("cityInput").value;
       if(!city) return alert("都市名を入力してください");
 
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ja`;
+      
+      const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=ja`;
+
 
       try {
         const response = await fetch(url);
