@@ -25,28 +25,17 @@
       const city = document.getElementById("cityInput").value;
       if(!city) return alert("都市名を入力してください");
 
-      
       const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=ja`;
-
 
       try {
         const response = await fetch(url);
         const data = await response.json();
-        if(data.cod !== 200) {
+        console.log(data); // 返り値を確認できる
+
+        if(data.error) {
           document.getElementById("weather").textContent = "天気情報が見つかりません";
         } else {
           document.getElementById("weather").innerHTML = `
-            <p>${data.name}の天気: ${data.weather[0].description}</p>
-            <p>気温: ${data.main.temp}°C</p>
-            <p>湿度: ${data.main.humidity}%</p>
-          `;
-        }
-      } catch(err) {
-        console.error(err);
-        document.getElementById("weather").textContent = "エラーが発生しました";
-      }
-    });
-  </script>
-
-</body>
-</html>
+            <p>${data.location.name}の天気: ${data.current.condition.text}</p>
+            <p>気温: ${data.current.temp_c}°C</p>
+            <p>湿度: ${dat
